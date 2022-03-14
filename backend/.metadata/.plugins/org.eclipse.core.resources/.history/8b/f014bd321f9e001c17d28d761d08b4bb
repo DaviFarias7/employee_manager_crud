@@ -1,0 +1,30 @@
+package tempo_de_processo.application;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+public class Duracao2 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		int x = sc.nextInt();
+
+		
+
+		while (x != 0) {
+			LocalDateTime inicio = LocalDateTime.parse("2022-03-01T09:30");
+			LocalDateTime fim = LocalDateTime.now();
+			Duration d = Duration.between(inicio, fim);
+			String tempoTotal = String.format("%02d:%02d", d.toHours(), d.toMinutesPart());
+			
+			System.out.println(tempoTotal);
+			x = sc.nextInt();
+		}
+
+		sc.close();
+
+	}
+}

@@ -1,0 +1,19 @@
+package com.davifarias.chamado.domain.service;
+
+import java.time.LocalDateTime;
+
+import com.davifarias.chamado.domain.model.Chamado;
+import com.davifarias.chamado.domain.repository.ChamadoRepository;
+
+public class ChamadoService {
+
+	private ChamadoRepository chamadoRepository;
+	
+	public Chamado abrirChamado(Chamado chamado) {
+		chamado.setDataDeAbertura(LocalDateTime.now());
+		
+		return chamadoRepository.save(chamado);
+	}
+	
+	
+}

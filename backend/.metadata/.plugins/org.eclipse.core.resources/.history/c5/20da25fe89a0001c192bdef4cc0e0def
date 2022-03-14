@@ -1,0 +1,5 @@
+package com.davifarias.employee.repository;
+
+public interface EmployeeRepository {
+
+}

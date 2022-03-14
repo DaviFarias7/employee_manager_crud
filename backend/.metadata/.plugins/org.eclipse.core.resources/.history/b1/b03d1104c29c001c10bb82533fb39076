@@ -1,0 +1,22 @@
+package com.davifarias.chamado.domain.service;
+
+import java.time.LocalDateTime;
+
+import org.springframework.stereotype.Service;
+
+import com.davifarias.chamado.domain.model.Chamado;
+import com.davifarias.chamado.domain.repository.ChamadoRepository;
+
+@Service
+public class ChamadoService {
+
+	private ChamadoRepository chamadoRepository;
+	
+	public Chamado abrirChamado(Chamado chamado) {
+		chamado.setDataDeAbertura(LocalDateTime.now());
+		
+		return chamadoRepository.save(chamado);
+	}
+	
+	
+}

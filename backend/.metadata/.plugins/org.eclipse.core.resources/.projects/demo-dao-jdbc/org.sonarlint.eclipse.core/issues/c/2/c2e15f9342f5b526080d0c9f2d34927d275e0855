@@ -1,0 +1,13 @@
+
+}
+java:S1192ç"MDefine a constant instead of duplicating this literal "DepartmentId" 5 times.(«÷Û—HòRCRITICALZ
+CODE_SMELL
+å
+java:S1488t"[Immediately return this expression instead of assigning it to the temporary variable "obj".(ñÓ©¡¯ˇˇˇˇHôRMINORZ
+CODE_SMELL
+Ü
+java:S2293õ"YReplace the type specification in this constructor call with the diamond operator ("<>").(àìª·HöRMINORZ
+CODE_SMELL
+Ü
+java:S2293¿"YReplace the type specification in this constructor call with the diamond operator ("<>").(àìª·HõRMINORZ
+CODE_SMELL

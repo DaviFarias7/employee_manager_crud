@@ -1,0 +1,34 @@
+package com.davifarias.chamado.domain.config;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import com.davifarias.chamado.domain.model.Chamado;
+import com.davifarias.chamado.domain.repository.ChamadoRepository;
+
+@Configuration
+@Profile("test")
+public class ChamadoApplicatioTest implements CommandLineRunner {
+
+	@Autowired
+	private ChamadoRepository chamadoRep;
+	
+		
+	@Override
+	public void run(String... args) throws Exception {
+		
+	Chamado c1 = new Chamado(null, "Erro na geração de boletos", LocalDateTime.now(), LocalDateTime.now());
+	Chamado c2 = new Chamado(null, "Erro na geração faturas", LocalDateTime.now(), LocalDateTime.now());
+	Chamado c3 = new Chamado(null, "Erro na geração de boletos", LocalDateTime.now(), LocalDateTime.parse("2022-03-05 19:22:33.14733"));
+	Chamado c4 = new Chamado(null, "Erro na geração faturas", LocalDateTime.now(), LocalDateTime.parse("2022-03-05 19:22:33.14733"));
+		
+	chamadoRep.saveAll(Arrays.asList(c1, c2));
+		
+	}
+
+}

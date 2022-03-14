@@ -1,0 +1,5 @@
+package tempo_de_processo.application;
+
+public class Duration {
+
+}

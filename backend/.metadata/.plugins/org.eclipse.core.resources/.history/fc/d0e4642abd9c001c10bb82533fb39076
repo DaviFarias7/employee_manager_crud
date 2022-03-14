@@ -1,0 +1,5 @@
+package com.davifarias.chamado.domain.model;
+
+public class Chamado {
+
+}

@@ -1,0 +1,5 @@
+package com.davifarias.chamado.domain.config;
+
+public class ChamadoApplicationTest {
+
+}

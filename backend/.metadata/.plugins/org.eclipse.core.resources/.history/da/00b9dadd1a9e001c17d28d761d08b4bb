@@ -1,0 +1,18 @@
+package tempo_de_processo.application;
+
+import java.time.LocalDateTime;
+
+public class Duration {
+	
+
+	
+	LocalDateTime inicio = LocalDateTime.parse("2020-01-10T10:00");
+	LocalDateTime fim = LocalDateTime.parse("2020-01-10T12:59");
+	
+	
+	String tempoTotal = String.format("%02d:%02d", d.toHoursPart(), d.toMinutesPart());
+	System.out.println(tempoTotal); // 02:59
+
+	
+	
+}

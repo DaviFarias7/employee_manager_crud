@@ -1,0 +1,25 @@
+package com.davifarias.chamado.domain.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+
+import com.davifarias.chamado.domain.repository.ChamadoRepository;
+
+@Configuration
+@Profile("test")
+public class ChamadoApplicatioTest implements CommandLineRunner {
+
+	@Autowired
+	private ChamadoRepository chamadoRep;
+	
+		
+	@Override
+	public void run(String... args) throws Exception {
+	
+		
+		
+	}
+
+}

@@ -1,0 +1,20 @@
+package tempo_de_processo.entities;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+
+public class Duracao {
+
+	
+	
+	
+	
+	/*LocalDateTime horaInicial;
+
+	horaInicial = LocalDateTime.of(2022, 2, 28, 14, 31);
+	agora = LocalDateTime.now();
+	Duration diferenca = Duration.between(horaInicial, agora);
+	System.out.println(diferenca);*/
+		
+
+}

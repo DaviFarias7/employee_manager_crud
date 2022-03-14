@@ -1,0 +1,24 @@
+package tempo_de_processo.application;
+
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.util.Date;
+
+public class Aplication2 {
+
+	public static void main(String[] args) throws ParseException {
+		
+		DateFormat df = DateFormat.getDateInstance();
+		
+		Date horaInicial = df.parse("2015/08/14@10:00:00:GMT");
+		Date agora = df.parse("2015/08/14@11:00:00:GMT");
+		
+		long diferenca = agora.getTime() - horaInicial.getTime(); 
+		
+		long horas = (int) ((diferenca - (1000606024)) / (10006060)); 
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,65 @@
+package com.davifarias.chamado.domain.service;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.davifarias.chamado.domain.model.Chamado;
+import com.davifarias.chamado.domain.repository.ChamadoRepository;
+
+@Service
+public class ChamadoService {
+
+	@Autowired
+	private ChamadoRepository chamadoRepository;
+
+	public List<Chamado> findAll() {
+		return chamadoRepository.findAll();
+	}
+
+	public Chamado insert(Chamado obj) {
+		obj.setDataDeAbertura(LocalDateTime.now());
+		obj.setUltimaDataReinicio(LocalDateTime.now());
+		return chamadoRepository.save(obj);
+	}
+
+	public Chamado findChamado(Long id) {
+		return chamadoRepository.getById(id);
+	}
+
+	public void pausar(Long id) {
+
+		Chamado chamado = chamadoRepository.getById(id);
+		if (!chamado.getIsPausado()) {
+			LocalDateTime pausa = LocalDateTime.now();
+			LocalDateTime ultimaData = chamado.getUltimaDataReinicio();
+			Duration duration = Duration.between(ultimaData, pausa);
+			Long duracaoEmMilis = duration.toMinutes();
+			Long duracaoAnterior = chamado.getDuracao();
+			if (duracaoAnterior != null) {
+				chamado.setDuracao(duracaoEmMilis + duracaoAnterior);
+				chamado.setIsPausado(true);
+				chamadoRepository.save(chamado);
+				
+			}
+			else {
+				chamado.setDuracao(duracaoEmMilis);
+				chamadoRepository.save(chamado);
+				chamado.setIsPausado(true);
+			}
+		}
+	}
+
+	public void reiniciar(Long id) {
+		Chamado chamado = chamadoRepository.getById(id);
+		if (chamado.getIsPausado()) {
+			chamado.setUltimaDataReinicio(LocalDateTime.now());
+			chamadoRepository.save(chamado);
+			chamado.setIsPausado(false);
+		}
+	}
+
+}

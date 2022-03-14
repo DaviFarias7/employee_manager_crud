@@ -1,0 +1,19 @@
+package com.davifarias.chamado.domain.model;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+public class Chamado {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String titulo;
+	private LocalDateTime dataDeAbertura;
+	private LocalDateTime dataAtual;
+	
+	
+}

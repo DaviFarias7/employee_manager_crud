@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/DaviFarias7/EmployeesSalary.git"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="DaviFarias7 &lt;davic.farias7@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="DaviFarias7 &lt;davic.farias7@gmail.com&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\davic\git\EmployeesSalary\.git">
+			<item value="false"/>
+			<item value="DaviFarias7 &lt;davic.farias7@gmail.com&gt;"/>
+			<item value="Upload"/>
+			<item value="DaviFarias7 &lt;davic.farias7@gmail.com&gt;"/>
+			<item value="124c936e7581f3c1ce5b8584a27405863dbffab3"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
+	</section>
+	<section name="GitImportWizard">
+	</section>
+</section>

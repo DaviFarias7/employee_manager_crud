@@ -1,0 +1,5 @@
+package com.davifarias.chamado.domain.service;
+
+public class ChamadoService {
+
+}

@@ -1,0 +1,5 @@
+package com.davifarias.chamado.domain.repository;
+
+public interface ChamadoRepository {
+
+}

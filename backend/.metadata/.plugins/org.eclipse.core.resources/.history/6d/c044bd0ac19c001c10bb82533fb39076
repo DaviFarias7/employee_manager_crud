@@ -1,0 +1,5 @@
+package com.davifarias.chamado.domain.controller;
+
+public class ChamadoController {
+
+}

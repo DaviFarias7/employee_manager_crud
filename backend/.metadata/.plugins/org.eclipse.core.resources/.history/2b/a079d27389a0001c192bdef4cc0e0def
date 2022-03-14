@@ -1,0 +1,5 @@
+package com.davifarias.employee.model;
+
+public class Employee {
+
+}

@@ -1,0 +1,23 @@
+package tempo_de_processo.application;
+
+import java.time.Duration;
+import java.time.LocalDateTime;
+
+public class Aplication2 {
+
+	public static void main(String[] args) {
+		
+		LocalDateTime horaInicial;
+		LocalDateTime agora = LocalDateTime.now();
+		
+		horaInicial = LocalDateTime.of(2022, 05, 03	, 14,16);
+		Duration diferenca = Duration.between(horaInicial, agora);
+		System.out.println(diferenca);
+		
+		
+		
+		
+		
+	}
+
+}
