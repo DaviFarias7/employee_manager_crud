@@ -6,20 +6,3 @@ Aplicação de cadastro de empregados. Backend desenvolvido com Spring boot e fr
 
 Hospedagem do Backend foi feita no Heroku.
 
-#Requisições
-
-# GET
- https://employee-manager-crud.herokuapp.com/api/v1/employees
- 
- # POST
-  https://employee-manager-crud.herokuapp.com/api/v1/employees
-
- ```
- {
-        "firstName": "Davi",
-        "lastName": "Farias",
-        "emailId": "davifarias@gmail.com"
-    }
- ```   
-  # UPDATE E DELETE
-  https://employee-manager-crud.herokuapp.com/api/v1/employees/ "ID DO EMPREGADO"
